@@ -9,7 +9,7 @@
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to cowdemy Software Solutions.</h1>
+<h1 align="center">Welcome to Pulihore Raja's Software Solutions.</h1>
 <h1 align="center"> SANDEMY Software Solutions (tie up with Ananth(Kattraj technologies))- Very Good Training center for DevOps with AWS in Maratha Halli Bangalore India and also for Job Assitance Job Support also...Teaching Real Time scnerios</h1>
 <hr>
 <br>
