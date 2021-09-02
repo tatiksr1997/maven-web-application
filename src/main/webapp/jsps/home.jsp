@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1 align="center">Welcome to Pulihore Raja's Software Solutions.</h1>
-<h1 align="center"> SANDEMY Software Solutions (tie up with Ananth(Kattraj technologies))- Very Good and best Training center for Pulihora and kaatesh concepts in Maratha Halli Thotamula India and also for Job Assitance Job Support also...Teaching Real Time scnerios</h1>
+<h1 align="center"> SANDEMY Software Solutions & Ananth(Kattraj technologies))- Very Good and best Training center for Pulihora and kaatesh concepts in Maratha Halli Thotamula India and also for Job Assitance Job Support also...Teaching Real Time scnerios</h1>
 <hr>
 <br>
 	<h1><h3> Server Side IP Address </h3><br>
