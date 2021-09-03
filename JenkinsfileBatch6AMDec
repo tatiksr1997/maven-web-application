@@ -1,9 +1,8 @@
 node
 {
     
- def mavenHome = tool name: "maven3.6.3"
+ def mavenHome = tool name: "maven3.8.2"
  
- // This is S LC 
  
  stage('CheckoutCode')
  {
@@ -14,32 +13,4 @@ node
  {
   sh "${mavenHome}/bin/mvn clean package"
  }
- 
-   /*
- stage('ExecuteSonarQubeReport')
- {
-  sh "${mavenHome}/bin/mvn sonar:sonar"
- }
-
- stage('UploadArtifactIntoNexus')
-  {
-   sh "${mavenHome}/bin/mvn deploy"
-  }
-
-stage('DeployAppintoTomcatServer')
-  {
-   sshagent(['e1928823-940a-4f47-99c0-099e40bfbbe3']) {
-   sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@18.141.24.214:/opt/apache-tomcat-9.0.41/webapps/"   
-   }
-  }
-  
-  stage('SendEmailNotification')
-  {
-   mail bcc: 'devopstrainingblr@gmail.com', body: '''Build Over..
-
-   Regards,
-   Mithun Technologies,
-   9980923226''', cc: 'devopstrainingblr@gmail.com', from: '', replyTo: '', subject: 'Build Over..', to: 'devopstrainingblr@gmail.com'
-  }
-  */
 }
