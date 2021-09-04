@@ -1,0 +1,14 @@
+node
+{
+    environment{
+        PATH = "/opt/apache-maven-3.8.2/bin:$PATH"
+    }
+    stage('GIT clone')
+{
+    git branch: 'development', credentialsId: '42c13a45-2d73-4d28-a3bb-ef68a2bd442e', url: 'https://github.com/tatiksr1997/maven-web-application.git'
+}
+stage('MavenBulid')
+{
+    sh "mvn clean package"
+}
+}
