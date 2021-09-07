@@ -1,0 +1,27 @@
+node
+{
+    
+ def mavenHome = tool name: "maven3.8.2"
+ 
+ 
+ stage('CheckoutCode')
+ {
+   git branch: 'development', credentialsId: '8cfaa2b0-7c13-4a06-8732-14695d634079', url: 'https://github.com/tatiksr1997/maven-web-application.git'
+ }
+ 
+ stage('Build')
+ {
+  sh "${mavenHome}/bin/mvn clean package"
+ }
+ stage('DeploytoTomcat'){
+
+   sshagent(['ubuntu']) 
+   {
+     sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ubuntu@18.117.246.132:/opt/apache-tomcat-9.0.52/webapps/"
+   }sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ubuntu@18.117.246.132:/opt/apache-tomcat-9.0.52/webapps/"
+ }
+}
+
+
+chmod 777 to source and destination
+
