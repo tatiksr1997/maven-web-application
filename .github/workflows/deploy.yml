@@ -25,4 +25,4 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Tomcat deploy
-      run: "curl -X POST -u admin:admin /home/runner/work/maven-web-application/maven-web-application/opt/apache-tomcat-9.0.60/webapps"
+      run: curl -X POST -u admin:admin "/home/runner/work/maven-web-application/maven-web-application/opt/apache-tomcat-9.0.60/webapps"
